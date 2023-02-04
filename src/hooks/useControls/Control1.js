@@ -7,10 +7,10 @@ export function Control1() {
       value: "original",
       options: Object.keys(themes),
     },
-    taskbarPosition: {
+    taskbar: {
       value: "bottom",
       options: ["top"],
     },
-    customFont: true,
+    font: true,
   });
 }

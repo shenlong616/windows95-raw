@@ -5,15 +5,15 @@ import { useControls } from "../../hooks/useControls";
 
 export function Layout({ children }) {
   const { Control1 } = useControls();
-  const { taskbarPosition } = Control1();
+  const { taskbar } = Control1();
 
   return (
     <Styled_.Theme cssPropName="background-color" colorName="desktopBackground">
       <div
         className={clsx({
           "flex max-h-screen min-h-screen": true,
-          "flex-col": taskbarPosition === "bottom",
-          "flex-col-reverse": taskbarPosition === "top",
+          "flex-col": taskbar === "bottom",
+          "flex-col-reverse": taskbar === "top",
         })}
       >
         <div className="grow overflow-auto p-6">{children}</div>

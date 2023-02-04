@@ -31,11 +31,11 @@ const GlobalStyle2 = createGlobalStyle`${styleReset}`;
 
 export function React95({ children }) {
   const { Control1 } = useControls();
-  const { theme, customFont } = Control1();
+  const { theme, font } = Control1();
 
   return (
     <>
-      {customFont ? <GlobalStyle1 /> : <GlobalStyle2 />}
+      {font ? <GlobalStyle1 /> : <GlobalStyle2 />}
       <ThemeProvider theme={themes[theme]}>{children}</ThemeProvider>
     </>
   );

@@ -8,7 +8,7 @@ import { clsx } from "clsx";
 export function LeftSide() {
   const [state1, setState1] = useState(false);
   const { Control1 } = useControls();
-  const { taskbarPosition } = Control1();
+  const { taskbar } = Control1();
 
   return (
     <>
@@ -24,8 +24,8 @@ export function LeftSide() {
         <div
           className={clsx({
             "absolute left-0": true,
-            "bottom-full": taskbarPosition === "bottom",
-            "top-full": taskbarPosition === "top",
+            "bottom-full": taskbar === "bottom",
+            "top-full": taskbar === "top",
           })}
         >
           <MenuList onClick={() => setState1(false)}>
