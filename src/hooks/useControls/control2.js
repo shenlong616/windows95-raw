@@ -1,6 +1,6 @@
 import { useControls } from "leva";
 
-export function Control2() {
+export function control2() {
   return useControls("react-draggable", {
     disabled: false,
   });

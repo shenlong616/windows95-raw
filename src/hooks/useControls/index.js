@@ -1,9 +1,9 @@
-import { Control1 } from "./Control1";
-import { Control2 } from "./Control2";
+import { control1 } from "./control1";
+import { control2 } from "./control2";
 
 export function useControls() {
   return {
-    Control1: Control1,
-    Control2: Control2,
+    control1: control1,
+    control2: control2,
   };
 }

@@ -7,8 +7,8 @@ import { clsx } from "clsx";
 
 export function LeftSide() {
   const [state1, setState1] = useState(false);
-  const { Control1 } = useControls();
-  const { taskbar } = Control1();
+  const { control1 } = useControls();
+  const { taskbar } = control1();
 
   return (
     <>

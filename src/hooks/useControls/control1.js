@@ -1,7 +1,7 @@
 import { useControls } from "leva";
 import themes from "react95/dist/themes";
 
-export function Control1() {
+export function control1() {
   return useControls("react95", {
     font: true,
     theme: {

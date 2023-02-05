@@ -5,8 +5,8 @@ import { useControls } from "../../hooks/useControls";
 import { clsx } from "clsx";
 
 export function IconListItem({ iconName, title }) {
-  const { Control2 } = useControls();
-  const { disabled } = Control2();
+  const { control2 } = useControls();
+  const { disabled } = control2();
 
   return (
     <Uncategorized_.Draggable>

@@ -6,8 +6,8 @@ import { clsx } from "clsx";
 export function Draggable({ children }) {
   const ref1 = useRef();
   const [state1, setState1] = useState();
-  const { Control2 } = useControls();
-  const { disabled } = Control2();
+  const { control2 } = useControls();
+  const { disabled } = control2();
 
   return (
     <Draggable_

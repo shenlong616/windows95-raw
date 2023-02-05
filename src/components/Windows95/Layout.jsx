@@ -4,8 +4,8 @@ import { clsx } from "clsx";
 import { useControls } from "../../hooks/useControls";
 
 export function Layout({ children }) {
-  const { Control1 } = useControls();
-  const { taskbar } = Control1();
+  const { control1 } = useControls();
+  const { taskbar } = control1();
 
   return (
     <Styled_.Theme cssPropName="background-color" colorName="desktopBackground">

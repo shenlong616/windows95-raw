@@ -30,8 +30,8 @@ const GlobalStyle1 = createGlobalStyle`
 const GlobalStyle2 = createGlobalStyle`${styleReset}`;
 
 export function React95({ children }) {
-  const { Control1 } = useControls();
-  const { theme, font } = Control1();
+  const { control1 } = useControls();
+  const { theme, font } = control1();
 
   return (
     <>
