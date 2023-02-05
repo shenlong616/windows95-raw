@@ -6,11 +6,20 @@ import { Controls_ } from "./components/Controls";
 function App() {
   return (
     <>
-      <Providers_.React95>
-        <Windows95_.Layout>
-          <Windows95_.IconList />
-        </Windows95_.Layout>
-      </Providers_.React95>
+      <Providers_.ReactHelmetAsync>
+        <Helmet>
+          {/* https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone */}
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+          />
+        </Helmet>
+        <Providers_.React95>
+          <Windows95_.Layout>
+            <Windows95_.IconList />
+          </Windows95_.Layout>
+        </Providers_.React95>
+      </Providers_.ReactHelmetAsync>
       <Controls_.Control1 />
     </>
   );
