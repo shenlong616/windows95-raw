@@ -2,6 +2,7 @@ import "./App.css";
 import { Providers_ } from "./components/Providers";
 import { Windows95_ } from "./components/Windows95";
 import { Controls_ } from "./components/Controls";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   return (
