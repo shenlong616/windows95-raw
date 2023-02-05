@@ -2,12 +2,12 @@ import "./App.css";
 import { Providers_ } from "./components/Providers";
 import { Windows95_ } from "./components/Windows95";
 import { Controls_ } from "./components/Controls";
-import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
     <>
-      <Providers_.ReactHelmetAsync>
+      <HelmetProvider>
         <Helmet>
           {/* https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone */}
           <meta
@@ -15,12 +15,12 @@ function App() {
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
           />
         </Helmet>
-        <Providers_.React95>
-          <Windows95_.Layout>
-            <Windows95_.IconList />
-          </Windows95_.Layout>
-        </Providers_.React95>
-      </Providers_.ReactHelmetAsync>
+      </HelmetProvider>
+      <Providers_.React95>
+        <Windows95_.Layout>
+          <Windows95_.IconList />
+        </Windows95_.Layout>
+      </Providers_.React95>
       <Controls_.Control1 />
     </>
   );
