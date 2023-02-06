@@ -11,6 +11,8 @@ export function Draggable({ children }) {
 
   return (
     <Draggable_
+      // https://github.com/react-grid-layout/react-draggable#draggable-props
+      // Note that sending className, style, or transform as properties will error - set them on the child element directly.
       nodeRef={ref1}
       disabled={disabled}
       onStart={() => setState1(true)}
@@ -18,8 +20,6 @@ export function Draggable({ children }) {
     >
       <div
         ref={ref1}
-        // https://github.com/react-grid-layout/react-draggable#draggable-props
-        // Note that sending className, style, or transform as properties will error - set them on the child element directly.
         className={clsx({
           [state1 ? "cursor-grabbing" : "cursor-grab"]: !disabled,
         })}
