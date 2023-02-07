@@ -18,7 +18,7 @@ function App() {
       </HelmetProvider>
       <Providers_.React95>
         <Windows95_.Layout>
-          <Windows95_.IconList />
+          <Windows95_.DesktopIcon />
         </Windows95_.Layout>
       </Providers_.React95>
       <Controls_.Control1 />

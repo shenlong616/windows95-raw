@@ -4,7 +4,7 @@ import { _ } from "./_";
 import { useControls } from "../../hooks/useControls";
 import { clsx } from "clsx";
 
-export function IconListItem({ iconName, title }) {
+export function DesktopIconItem({ iconName, title }) {
   const { control2 } = useControls();
   const { disabled } = control2();
 
