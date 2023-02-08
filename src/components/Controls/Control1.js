@@ -6,4 +6,6 @@ export function Control1() {
       window.open("https://github.com/shenlong616/windows95-raw", "_blank")
     ),
   });
+
+  return;
 }
