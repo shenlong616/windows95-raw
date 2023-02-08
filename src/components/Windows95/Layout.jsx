@@ -8,7 +8,10 @@ export function Layout({ children }) {
   const { taskbar } = control1();
 
   return (
-    <Styled_.Theme cssPropName="background-color" colorName="desktopBackground">
+    <Styled_.Theme
+      cssPropName="background-color"
+      themeColorName="desktopBackground"
+    >
       <div
         className={clsx({
           "flex max-h-screen min-h-screen": true,
