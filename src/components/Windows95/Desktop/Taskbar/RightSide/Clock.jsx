@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from "react";
-import { useUtils } from "../../../../hooks/useUtils";
-import { Windows95_ } from "../../index";
+import { useUtils } from "../../../../../hooks/useUtils";
+import { Windows95_ } from "../../../index";
 
 export function Clock() {
   const { formatTime } = useUtils();
