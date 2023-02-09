@@ -1,9 +1,9 @@
-import { Text } from "./Text";
-import { Icon } from "./Icon";
 import { Desktop } from "./Desktop";
+import { Icon } from "./Icon";
+import { Text } from "./Text";
 
 export const _ = {
-  Text: Text,
-  Icon: Icon,
   Desktop: Desktop,
+  Icon: Icon,
+  Text: Text,
 };
