@@ -1,6 +1,5 @@
 import "./App.css";
 import { Windows95 } from "./components/Windows95";
-import { Controls_ } from "./components/Controls";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useControls, button } from "leva";
 
@@ -23,7 +22,6 @@ function App() {
         </Helmet>
       </HelmetProvider>
       <Windows95 />
-      <Controls_.Control1 />
     </>
   );
 }
