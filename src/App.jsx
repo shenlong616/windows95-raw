@@ -2,8 +2,15 @@ import "./App.css";
 import { Windows95 } from "./components/Windows95";
 import { Controls_ } from "./components/Controls";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useControls, button } from "leva";
 
 function App() {
+  useControls({
+    GitHub: button(() =>
+      window.open("https://github.com/shenlong616/windows95-raw", "_blank")
+    ),
+  });
+
   return (
     <>
       <HelmetProvider>
