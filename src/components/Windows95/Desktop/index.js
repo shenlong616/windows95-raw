@@ -1,5 +1,5 @@
 import { _ } from "./_";
 
-function Windows95() {}
+function Desktop() {}
 
-export { Windows95, _ as Windows95_ };
+export { Desktop, _ as Desktop_ };
