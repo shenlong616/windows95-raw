@@ -1,10 +1,10 @@
-import { Styled_ } from "../../Styled";
-import { Uncategorized_ } from "../../Uncategorized";
-import { useControls } from "../../../hooks/useControls";
+import { Styled_ } from "../../../Styled";
+import { Uncategorized_ } from "../../../Uncategorized";
+import { useControls } from "../../../../hooks/useControls";
 import { clsx } from "clsx";
-import { Windows95_ } from "../index";
+import { Windows95_ } from "../../index";
 
-export function IconListItem({ iconName, title }) {
+export function Item({ iconName, title }) {
   const { control2 } = useControls();
   const { disabled } = control2();
 
