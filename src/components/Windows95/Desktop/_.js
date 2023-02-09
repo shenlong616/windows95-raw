@@ -1,7 +1,7 @@
-import { Taskbar } from "./Taskbar";
 import { IconList } from "./IconList";
+import { Taskbar } from "./Taskbar";
 
 export const _ = {
-  Taskbar: Taskbar,
   IconList: IconList,
+  Taskbar: Taskbar,
 };
