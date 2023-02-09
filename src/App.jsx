@@ -1,15 +1,9 @@
 import "./App.css";
 import { Windows95 } from "./components/Windows95";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useControls, button } from "leva";
+import { Uncategorized_ } from "./components/Uncategorized";
 
 function App() {
-  useControls({
-    GitHub: button(() =>
-      window.open("https://github.com/shenlong616/windows95-raw", "_blank")
-    ),
-  });
-
   return (
     <>
       <HelmetProvider>
@@ -22,6 +16,7 @@ function App() {
         </Helmet>
       </HelmetProvider>
       <Windows95 />
+      <Uncategorized_.GitHub />
     </>
   );
 }
