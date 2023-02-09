@@ -1,15 +1,9 @@
-import { Text } from "./Text";
-import { Icon } from "./Icon";
-import { DesktopIcon } from "./DesktopIcon";
-import { DesktopIconItem } from "./DesktopIconItem";
-import { TaskBar } from "./TaskBar";
-import { Layout } from "./Layout";
+import { Taskbar } from "./Taskbar";
+import { IconList } from "./IconList";
+import { IconListItem } from "./IconListItem";
 
 export const _ = {
-  Text: Text,
-  Icon: Icon,
-  DesktopIcon: DesktopIcon,
-  DesktopIconItem: DesktopIconItem,
-  TaskBar: TaskBar,
-  Layout: Layout,
+  Taskbar: Taskbar,
+  IconList: IconList,
+  IconListItem: IconListItem,
 };
