@@ -1,5 +1,4 @@
 import "./App.css";
-import { Providers_ } from "./components/Providers";
 import { Windows95_ } from "./components/Windows95";
 import { Controls_ } from "./components/Controls";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -16,11 +15,9 @@ function App() {
           />
         </Helmet>
       </HelmetProvider>
-      <Providers_.React95>
-        <Windows95_.Layout>
-          <Windows95_.DesktopIcon />
-        </Windows95_.Layout>
-      </Providers_.React95>
+      <Windows95_.Layout>
+        <Windows95_.DesktopIcon />
+      </Windows95_.Layout>
       <Controls_.Control1 />
     </>
   );
