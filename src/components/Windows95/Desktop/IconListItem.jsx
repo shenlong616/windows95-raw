@@ -1,6 +1,6 @@
-import { Styled_ } from "../Styled";
-import { Uncategorized_ } from "../Uncategorized";
-import { useControls } from "../../hooks/useControls";
+import { Styled_ } from "../../Styled";
+import { Uncategorized_ } from "../../Uncategorized";
+import { useControls } from "../../../hooks/useControls";
 import { clsx } from "clsx";
 import { Windows95_ } from "../index";
 
