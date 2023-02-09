@@ -1,7 +1,7 @@
 import { AppBar, Toolbar } from "react95";
 import { _ } from "./_";
 
-function TaskBar() {
+function Taskbar() {
   return (
     <AppBar position="unset" as="div">
       <Toolbar className="justify-between">
@@ -12,4 +12,4 @@ function TaskBar() {
   );
 }
 
-export { TaskBar, _ as TaskBar_ };
+export { Taskbar, _ as Taskbar_ };

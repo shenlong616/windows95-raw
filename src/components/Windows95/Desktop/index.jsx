@@ -1,9 +1,9 @@
 import { _ } from "./_";
-import { Styled_ } from "../Styled";
+import { Styled_ } from "../../Styled";
 import { clsx } from "clsx";
-import { useControls } from "../../hooks/useControls";
+import { useControls } from "../../../hooks/useControls";
 
-export function Layout({ children }) {
+function Desktop() {
   const { control1 } = useControls();
   const { taskbar } = control1();
 
@@ -19,12 +19,16 @@ export function Layout({ children }) {
           "flex-col-reverse": taskbar === "top",
         })}
       >
-        <div className="grow overflow-auto p-6">{children}</div>
-        <_.TaskBar />
+        <div className="grow overflow-auto p-6">
+          <_.IconList />
+        </div>
+        <_.Taskbar />
         {/* <div className="absolute flex h-full w-full flex-col items-center justify-center">
-          center element
-        </div> */}
+            center element
+          </div> */}
       </div>
     </Styled_.Theme>
   );
 }
+
+export { Desktop, _ as Desktop_ };

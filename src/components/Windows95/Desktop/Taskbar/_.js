@@ -1,7 +1,7 @@
-import { LeftSide } from "./LeftSide";
 import { RightSide } from "./RightSide";
+import { LeftSide } from "./LeftSide";
 
 export const _ = {
-  LeftSide: LeftSide,
   RightSide: RightSide,
+  LeftSide: LeftSide,
 };

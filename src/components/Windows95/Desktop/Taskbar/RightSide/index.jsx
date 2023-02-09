@@ -1,7 +1,7 @@
 import { Frame } from "react95";
 import { _ } from "./_";
-import { Windows95_ } from "../../index";
-import { Uncategorized_ } from "../../../Uncategorized";
+import { Windows95_ } from "../../../index";
+import { Uncategorized_ } from "../../../../Uncategorized";
 
 function RightSide() {
   return (
