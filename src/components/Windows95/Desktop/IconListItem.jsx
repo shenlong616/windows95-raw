@@ -1,8 +1,8 @@
 import { Styled_ } from "../Styled";
 import { Uncategorized_ } from "../Uncategorized";
-import { _ } from "./_";
 import { useControls } from "../../hooks/useControls";
 import { clsx } from "clsx";
+import { Windows95_ } from "../index";
 
 export function IconListItem({ iconName, title }) {
   const { control2 } = useControls();
@@ -11,7 +11,7 @@ export function IconListItem({ iconName, title }) {
   return (
     <Uncategorized_.Draggable>
       <div className="group flex flex-col items-center">
-        <_.Icon
+        <Windows95_.Icon
           iconName={iconName}
           className={clsx({ "group-hover:invert": !disabled, "mb-1": true })}
         />
@@ -23,7 +23,7 @@ export function IconListItem({ iconName, title }) {
                 !disabled,
             })}
           >
-            <_.Text sm>{title}</_.Text>
+            <Windows95_.Text sm>{title}</Windows95_.Text>
           </span>
         </Styled_.Theme>
       </div>
