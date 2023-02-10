@@ -17,7 +17,6 @@ function App() {
           />
         </Helmet>
       </HelmetProvider>
-
       <Suspense fallback={<div>Loading...</div>}>
         <Windows95 />
       </Suspense>
