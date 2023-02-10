@@ -9,4 +9,4 @@ function Windows95() {
   );
 }
 
-export { Windows95, _ as Windows95_ };
+export { Windows95 as default, _ as Windows95_ };

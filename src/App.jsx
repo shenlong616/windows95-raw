@@ -1,7 +1,9 @@
 import "./App.css";
-import { Windows95 } from "./components/Windows95";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Uncategorized_ } from "./components/Uncategorized";
+import React, { Suspense } from "react";
+
+const Windows95 = React.lazy(() => import("./components/Windows95"));
 
 function App() {
   return (
@@ -15,7 +17,10 @@ function App() {
           />
         </Helmet>
       </HelmetProvider>
-      <Windows95 />
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <Windows95 />
+      </Suspense>
       <Uncategorized_.GitHub />
     </>
   );
