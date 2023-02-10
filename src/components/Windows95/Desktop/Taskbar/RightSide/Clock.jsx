@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useUtils } from "../../../../../hooks/useUtils";
 import { Windows95_ } from "../../../index";
 
@@ -8,7 +8,7 @@ export function Clock() {
     `${new Date().getHours()}:${formatTime(new Date().getMinutes())}`;
   const [state1, setState1] = useState(localeTime);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const idInterval = setInterval(() => setState1(localeTime));
 
     return () => clearInterval(idInterval);
