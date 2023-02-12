@@ -11,8 +11,7 @@ export function control1() {
         options: Object.keys(themes),
       },
       taskbar: {
-        value: "bottom",
-        options: ["top"],
+        options: ["bottom", "top"],
       },
     },
     { color: "yellow", order: -2 }
