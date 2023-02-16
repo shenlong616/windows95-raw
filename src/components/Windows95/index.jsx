@@ -1,11 +1,11 @@
 import { _ } from "./_";
-import { Providers_ } from "../Providers";
+import { Provider_ } from "../Provider";
 
 function Windows95() {
   return (
-    <Providers_.React95>
+    <Provider_.React95>
       <_.Desktop />
-    </Providers_.React95>
+    </Provider_.React95>
   );
 }
 
