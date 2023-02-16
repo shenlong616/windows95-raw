@@ -14,6 +14,6 @@ export function control1() {
         options: ["bottom", "top"],
       },
     },
-    { color: "yellow", order: -2 }
+    { color: "yellow", order: -99 }
   );
 }
