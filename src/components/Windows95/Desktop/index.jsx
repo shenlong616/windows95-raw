@@ -1,5 +1,5 @@
 import { _ } from "./_";
-import { Styled_ } from "../../Styled";
+import { Styled } from "../../Styled";
 import { clsx } from "clsx";
 import { useControls } from "../../../hooks/useControls";
 
@@ -8,7 +8,7 @@ function Desktop() {
   const { taskbar } = control1();
 
   return (
-    <Styled_.Theme
+    <Styled.Theme
       cssPropName="background-color"
       themeColorName="desktopBackground"
     >
@@ -27,7 +27,7 @@ function Desktop() {
             center element
           </div> */}
       </div>
-    </Styled_.Theme>
+    </Styled.Theme>
   );
 }
 

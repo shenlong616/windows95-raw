@@ -1,5 +1,3 @@
 import { _ } from "./_";
 
-function Provider() {}
-
-export { Provider, _ as Provider_ };
+export { _ as Provider };

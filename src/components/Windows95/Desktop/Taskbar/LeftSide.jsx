@@ -1,6 +1,6 @@
 import { Button, MenuList, Separator } from "react95";
 import { useState } from "react";
-import { Uncategorized_ } from "../../../Uncategorized";
+import { Uncategorized } from "../../../Uncategorized";
 import { Windows95_ } from "../../index";
 import { useControls } from "../../../../hooks/useControls";
 import { clsx } from "clsx";
@@ -29,16 +29,16 @@ export function LeftSide() {
           })}
         >
           <MenuList onClick={() => setState1(false)}>
-            <Uncategorized_.MenuListItem
+            <Uncategorized.MenuListItem
               iconName="Ie_16x16_8"
               title="Internet Explorer"
             />
-            <Uncategorized_.MenuListItem
+            <Uncategorized.MenuListItem
               iconName="Regedit_16x16_4"
               title="Regedit"
             />
             <Separator />
-            <Uncategorized_.MenuListItem
+            <Uncategorized.MenuListItem
               iconName="PowerOff_16x16_4"
               title="Shut down"
               disabled
