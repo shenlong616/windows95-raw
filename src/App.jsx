@@ -1,5 +1,5 @@
 import "./App.css";
-import { Uncategorized_ } from "./components/Uncategorized";
+import { Uncategorized } from "./components/Uncategorized";
 import React, { Suspense } from "react";
 
 const Windows95 = React.lazy(() => import("./components/Windows95"));
@@ -7,11 +7,11 @@ const Windows95 = React.lazy(() => import("./components/Windows95"));
 function App() {
   return (
     <>
-      <Uncategorized_.HeadTag />
+      <Uncategorized.HeadTag />
       <Suspense fallback={<div>Loading...</div>}>
         <Windows95 />
       </Suspense>
-      <Uncategorized_.GitHub />
+      <Uncategorized.GitHub />
     </>
   );
 }

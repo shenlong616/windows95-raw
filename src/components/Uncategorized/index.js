@@ -1,5 +1,3 @@
 import { _ } from "./_";
 
-function Uncategorized() {}
-
-export { Uncategorized, _ as Uncategorized_ };
+export { _ as Uncategorized };

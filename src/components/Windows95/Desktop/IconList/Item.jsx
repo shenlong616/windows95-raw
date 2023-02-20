@@ -1,5 +1,5 @@
 import { Styled } from "../../../Styled";
-import { Uncategorized_ } from "../../../Uncategorized";
+import { Uncategorized } from "../../../Uncategorized";
 import { useControls } from "../../../../hooks/useControls";
 import { clsx } from "clsx";
 import { Windows95_ } from "../../index";
@@ -9,7 +9,7 @@ export function Item({ iconName, title }) {
   const { disabled } = control2();
 
   return (
-    <Uncategorized_.Draggable>
+    <Uncategorized.Draggable>
       <div className="group flex flex-col items-center">
         <Windows95_.Icon
           iconName={iconName}
@@ -27,6 +27,6 @@ export function Item({ iconName, title }) {
           </span>
         </Styled.Theme>
       </div>
-    </Uncategorized_.Draggable>
+    </Uncategorized.Draggable>
   );
 }
