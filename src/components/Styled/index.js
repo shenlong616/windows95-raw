@@ -1,5 +1,3 @@
 import { _ } from "./_";
 
-function Styled() {}
-
-export { Styled, _ as Styled_ };
+export { _ as Styled };
