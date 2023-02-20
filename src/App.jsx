@@ -1,8 +1,8 @@
 import "./App.css";
 import { Uncategorized } from "./components/Uncategorized";
-import React, { Suspense } from "react";
+import { lazy, Suspense } from "react";
 
-const Windows95 = React.lazy(() => import("./components/Windows95"));
+const Windows95 = lazy(() => import("./components/Windows95"));
 
 function App() {
   return (
