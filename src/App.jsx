@@ -11,7 +11,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Windows95 />
       </Suspense>
-      <Uncategorized.GitHub />
+      <Uncategorized.GitHub url="https://github.com/shenlong616/windows95-raw" />
     </>
   );
 }

@@ -1,11 +1,7 @@
 import { useControls, button } from "leva";
 
-export function GitHub() {
+export function GitHub({ url }) {
   useControls({
-    GitHub: button(() =>
-      window.open("https://github.com/shenlong616/windows95-raw", "_blank")
-    ),
+    GitHub: button(() => window.open(url, "_blank")),
   });
-
-  return;
 }
