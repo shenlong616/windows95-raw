@@ -15,7 +15,7 @@ export function Item({ iconName, title }) {
           iconName={iconName}
           className={clsx({ "group-hover:invert": !disabled, "mb-1": true })}
         />
-        <Styled.Theme cssPropName="color" themeColorName="canvasTextInvert">
+        <Styled.Theme cssPropName="color" colorName="canvasTextInvert">
           <span
             className={clsx({
               "border border-dotted border-transparent px-1 py-px": true,
