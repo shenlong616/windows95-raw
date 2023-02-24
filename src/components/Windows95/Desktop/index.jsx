@@ -1,8 +1,8 @@
+import { IconList } from "./IconList";
+import { Taskbar } from "./Taskbar";
 import { Styled } from "../../Styled";
 import { clsx } from "clsx";
 import { useLeva } from "../../../hooks/useLeva";
-import { IconList } from "./IconList";
-import { Taskbar } from "./Taskbar";
 
 export function Desktop() {
   const { control1 } = useLeva();
