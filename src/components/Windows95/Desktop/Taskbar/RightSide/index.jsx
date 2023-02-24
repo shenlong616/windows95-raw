@@ -8,7 +8,7 @@ function RightSide() {
     <Frame variant="status">
       <div className="flex min-w-[6rem] flex-row items-center justify-center gap-2 p-1">
         <Windows95_.Icon iconName="Fax_16x16_4" />
-        <Uncategorized.Icon
+        <Uncategorized.AnimatedIcon
           iconName1="Lights101_16x16_4"
           iconName2="Lights102_16x16_4"
         />
