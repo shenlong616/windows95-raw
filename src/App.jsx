@@ -19,8 +19,8 @@ function App() {
       </HelmetProvider>
       <Suspense fallback={<div>Loading...</div>}>
         <Windows95 />
+        <Uncategorized.GitHub url="https://github.com/shenlong616/windows95-raw" />
       </Suspense>
-      <Uncategorized.GitHub url="https://github.com/shenlong616/windows95-raw" />
     </>
   );
 }
