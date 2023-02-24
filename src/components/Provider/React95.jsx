@@ -8,22 +8,25 @@ import { useLeva } from "../../hooks/useLeva";
 
 const GlobalStyle1 = createGlobalStyle`
   @font-face {
-    font-family: 'ms_sans_serif';
-    src: url('${ms_sans_serif}') format('woff2');
+    font-family: "ms_sans_serif";
+    src: url("${ms_sans_serif}") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
   }
+
   @font-face {
-    font-family: 'ms_sans_serif';
-    src: url('${ms_sans_serif_bold}') format('woff2');
+    font-family: "ms_sans_serif";
+    src: url("${ms_sans_serif_bold}") format("woff2");
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
   }
+
   * {
-    font-family: 'ms_sans_serif' !important;
+    font-family: "ms_sans_serif" !important;
   }
+
   ${styleReset}
 `;
 
