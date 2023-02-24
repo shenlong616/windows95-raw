@@ -7,6 +7,7 @@ export function Clock() {
       2,
       "0"
     )}`;
+
   const [state1, setState1] = useState(localeTime);
 
   useEffect(() => {
