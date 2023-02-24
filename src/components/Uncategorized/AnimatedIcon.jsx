@@ -1,4 +1,4 @@
-import { Uncategorized } from "../Uncategorized";
+import { Uncategorized } from "./index";
 import { useEffect, useState } from "react";
 
 export function AnimatedIcon({ iconName1, iconName2 }) {
