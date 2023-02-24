@@ -6,7 +6,7 @@ import { Provider } from "../Provider";
 export default function Windows95() {
   return (
     <Provider.React95>
-      <Desktop />
+      <Windows95.Desktop />
     </Provider.React95>
   );
 }
