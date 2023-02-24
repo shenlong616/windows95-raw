@@ -1,13 +1,13 @@
 import { AppBar, Toolbar } from "react95";
-import { RightSide } from "./RightSide";
-import { LeftSide } from "./LeftSide";
+import { ASide } from "./ASide";
+import { BSide } from "./BSide";
 
 export function Taskbar() {
   return (
     <AppBar position="unset" as="div">
       <Toolbar className="justify-between">
-        <LeftSide />
-        <RightSide />
+        <ASide />
+        <BSide />
       </Toolbar>
     </AppBar>
   );

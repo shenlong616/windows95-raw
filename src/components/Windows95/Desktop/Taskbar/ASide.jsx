@@ -4,7 +4,7 @@ import { Uncategorized } from "../../../Uncategorized";
 import { useLeva } from "../../../../hooks/useLeva";
 import { clsx } from "clsx";
 
-export function LeftSide() {
+export function ASide() {
   const [state1, setState1] = useState(false);
   const { control1 } = useLeva();
   const { taskbar } = control1();

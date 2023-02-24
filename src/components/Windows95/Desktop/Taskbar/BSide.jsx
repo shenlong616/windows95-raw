@@ -2,7 +2,7 @@ import { Frame } from "react95";
 import { Uncategorized } from "../../../Uncategorized";
 import { Clock } from "./Clock";
 
-export function RightSide() {
+export function BSide() {
   return (
     <Frame variant="status">
       <div className="flex min-w-[6rem] flex-row items-center justify-center gap-2 p-1">
