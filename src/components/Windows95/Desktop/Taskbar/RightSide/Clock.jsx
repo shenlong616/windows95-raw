@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Windows95_ } from "../../../index";
+import Windows95 from "../../../index";
 
 export function Clock() {
   const localeTime = () =>
@@ -15,5 +15,5 @@ export function Clock() {
     return () => clearInterval(idInterval);
   }, []);
 
-  return <Windows95_.Text sm>{state1}</Windows95_.Text>;
+  return <Windows95.Text sm>{state1}</Windows95.Text>;
 }

@@ -1,7 +1,7 @@
 import { Button, MenuList, Separator } from "react95";
 import { useState } from "react";
 import { Uncategorized } from "../../../Uncategorized";
-import { Windows95_ } from "../../index";
+import Windows95 from "../../index";
 import { useLeva } from "../../../../hooks/useLeva";
 import { clsx } from "clsx";
 
@@ -17,8 +17,8 @@ export function LeftSide() {
         active={state1}
         className="font-bold"
       >
-        <Windows95_.Icon iconName="User1_16x16_4" className="mr-1" />
-        <Windows95_.Text sm>Start</Windows95_.Text>
+        <Windows95.Icon iconName="User1_16x16_4" className="mr-1" />
+        <Windows95.Text sm>Start</Windows95.Text>
       </Button>
       {state1 ? (
         <div
