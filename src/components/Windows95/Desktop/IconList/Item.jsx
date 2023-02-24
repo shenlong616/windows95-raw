@@ -2,7 +2,6 @@ import { Styled } from "../../../Styled";
 import { Uncategorized } from "../../../Uncategorized";
 import { useLeva } from "../../../../hooks/useLeva";
 import { clsx } from "clsx";
-import Windows95 from "../../index";
 
 export function Item({ iconName, title }) {
   const { control2 } = useLeva();
@@ -11,7 +10,7 @@ export function Item({ iconName, title }) {
   return (
     <Uncategorized.Draggable>
       <div className="group flex flex-col items-center">
-        <Windows95.Icon
+        <Uncategorized.Icon
           iconName={iconName}
           className={clsx({ "group-hover:invert": !disabled, "mb-1": true })}
         />
@@ -23,7 +22,7 @@ export function Item({ iconName, title }) {
                 !disabled,
             })}
           >
-            <Windows95.Text sm>{title}</Windows95.Text>
+            <Uncategorized.Text sm>{title}</Uncategorized.Text>
           </span>
         </Styled.Div>
       </div>

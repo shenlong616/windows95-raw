@@ -1,4 +1,4 @@
-import Windows95 from "../Windows95";
+import { Uncategorized } from "../Uncategorized";
 import { useEffect, useState } from "react";
 
 export function AnimatedIcon({ iconName1, iconName2 }) {
@@ -10,5 +10,5 @@ export function AnimatedIcon({ iconName1, iconName2 }) {
     return () => clearTimeout(idTimeout);
   }, [state1]);
 
-  return <Windows95.Icon iconName={state1 ? iconName1 : iconName2} />;
+  return <Uncategorized.Icon iconName={state1 ? iconName1 : iconName2} />;
 }

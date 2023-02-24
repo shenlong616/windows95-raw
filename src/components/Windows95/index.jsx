@@ -1,6 +1,4 @@
 import { Desktop } from "./Desktop";
-import { Icon } from "./Icon";
-import { Text } from "./Text";
 import { Provider } from "../Provider";
 
 export default function Windows95() {
@@ -11,4 +9,4 @@ export default function Windows95() {
   );
 }
 
-Object.assign(Windows95, { Desktop, Icon, Text });
+Object.assign(Windows95, { Desktop });
