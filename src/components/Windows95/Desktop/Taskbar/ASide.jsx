@@ -1,13 +1,12 @@
 import { Button, MenuList, Separator } from "react95";
 import { useState } from "react";
 import { Uncategorized } from "../../../Uncategorized";
-import { Windows95_ } from "../../index";
-import { useControls } from "../../../../hooks/useControls";
+import { useLeva } from "../../../../hooks/useLeva";
 import { clsx } from "clsx";
 
-export function LeftSide() {
+export function ASide() {
   const [state1, setState1] = useState(false);
-  const { control1 } = useControls();
+  const { control1 } = useLeva();
   const { taskbar } = control1();
 
   return (
@@ -17,8 +16,8 @@ export function LeftSide() {
         active={state1}
         className="font-bold"
       >
-        <Windows95_.Icon iconName="User1_16x16_4" className="mr-1" />
-        <Windows95_.Text sm>Start</Windows95_.Text>
+        <Uncategorized.Icon iconName="User1_16x16_4" className="mr-1" />
+        <Uncategorized.Text sm>Start</Uncategorized.Text>
       </Button>
       {state1 ? (
         <div

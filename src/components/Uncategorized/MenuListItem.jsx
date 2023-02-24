@@ -1,11 +1,11 @@
 import { MenuListItem as MenuListItem_ } from "react95";
-import { Windows95_ } from "../Windows95";
+import { Uncategorized } from "./index";
 
-export function MenuListItem({ iconName, title, disabled }) {
+export function MenuListItem({ iconName, title, ...rest }) {
   return (
-    <MenuListItem_ disabled={disabled}>
-      <Windows95_.Icon iconName={iconName} className="mr-2" />
-      <Windows95_.Text sm>{title}</Windows95_.Text>
+    <MenuListItem_ {...rest}>
+      <Uncategorized.Icon iconName={iconName} className="mr-2" />
+      <Uncategorized.Text sm>{title}</Uncategorized.Text>
     </MenuListItem_>
   );
 }

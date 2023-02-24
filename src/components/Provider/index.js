@@ -1,3 +1,5 @@
-import { _ } from "./_";
+import { React95 } from "./React95";
 
-export { _ as Provider };
+export function Provider() {}
+
+Object.assign(Provider, { React95 });

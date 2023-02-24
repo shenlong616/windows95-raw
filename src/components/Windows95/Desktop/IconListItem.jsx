@@ -1,21 +1,20 @@
-import { Styled } from "../../../Styled";
-import { Uncategorized } from "../../../Uncategorized";
-import { useControls } from "../../../../hooks/useControls";
+import { Styled } from "../../Styled";
+import { Uncategorized } from "../../Uncategorized";
+import { useLeva } from "../../../hooks/useLeva";
 import { clsx } from "clsx";
-import { Windows95_ } from "../../index";
 
-export function Item({ iconName, title }) {
-  const { control2 } = useControls();
+export function IconListItem({ iconName, title }) {
+  const { control2 } = useLeva();
   const { disabled } = control2();
 
   return (
     <Uncategorized.Draggable>
       <div className="group flex flex-col items-center">
-        <Windows95_.Icon
+        <Uncategorized.Icon
           iconName={iconName}
           className={clsx({ "group-hover:invert": !disabled, "mb-1": true })}
         />
-        <Styled.Theme cssPropName="color" themeColorName="canvasTextInvert">
+        <Styled.Div cssPropName="color" colorName="canvasTextInvert">
           <span
             className={clsx({
               "border border-dotted border-transparent px-1 py-px": true,
@@ -23,9 +22,9 @@ export function Item({ iconName, title }) {
                 !disabled,
             })}
           >
-            <Windows95_.Text sm>{title}</Windows95_.Text>
+            <Uncategorized.Text sm>{title}</Uncategorized.Text>
           </span>
-        </Styled.Theme>
+        </Styled.Div>
       </div>
     </Uncategorized.Draggable>
   );

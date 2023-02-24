@@ -1,3 +1,17 @@
-import { _ } from "./_";
+import { AnimatedIcon } from "./AnimatedIcon";
+import { Draggable } from "./Draggable";
+import { GitHub } from "./GitHub";
+import { Icon } from "./Icon";
+import { MenuListItem } from "./MenuListItem";
+import { Text } from "./Text";
 
-export { _ as Uncategorized };
+export function Uncategorized() {}
+
+Object.assign(Uncategorized, {
+  AnimatedIcon,
+  Draggable,
+  GitHub,
+  Icon,
+  MenuListItem,
+  Text,
+});

@@ -1,12 +1,10 @@
-import { _ } from "./_";
+import { Desktop } from "./Desktop";
 import { Provider } from "../Provider";
 
-function Windows95() {
+export default function Windows95() {
   return (
     <Provider.React95>
-      <_.Desktop />
+      <Desktop />
     </Provider.React95>
   );
 }
-
-export { Windows95 as default, _ as Windows95_ };

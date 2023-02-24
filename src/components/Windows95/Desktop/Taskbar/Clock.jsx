@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Windows95_ } from "../../../index";
+import { Uncategorized } from "../../../Uncategorized";
 
 export function Clock() {
   const localeTime = () =>
@@ -7,6 +7,7 @@ export function Clock() {
       2,
       "0"
     )}`;
+
   const [state1, setState1] = useState(localeTime);
 
   useEffect(() => {
@@ -15,5 +16,5 @@ export function Clock() {
     return () => clearInterval(idInterval);
   }, []);
 
-  return <Windows95_.Text sm>{state1}</Windows95_.Text>;
+  return <Uncategorized.Text sm>{state1}</Uncategorized.Text>;
 }

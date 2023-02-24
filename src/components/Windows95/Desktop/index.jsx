@@ -1,17 +1,15 @@
-import { _ } from "./_";
+import { IconList } from "./IconList";
+import { Taskbar } from "./Taskbar";
 import { Styled } from "../../Styled";
 import { clsx } from "clsx";
-import { useControls } from "../../../hooks/useControls";
+import { useLeva } from "../../../hooks/useLeva";
 
-function Desktop() {
-  const { control1 } = useControls();
+export function Desktop() {
+  const { control1 } = useLeva();
   const { taskbar } = control1();
 
   return (
-    <Styled.Theme
-      cssPropName="background-color"
-      themeColorName="desktopBackground"
-    >
+    <Styled.Div cssPropName="background-color" colorName="desktopBackground">
       <div
         className={clsx({
           "flex max-h-screen min-h-screen": true,
@@ -20,15 +18,13 @@ function Desktop() {
         })}
       >
         <div className="grow overflow-auto p-6">
-          <_.IconList />
+          <IconList />
         </div>
-        <_.Taskbar />
+        <Taskbar />
         {/* <div className="absolute flex h-full w-full flex-col items-center justify-center">
             center element
           </div> */}
       </div>
-    </Styled.Theme>
+    </Styled.Div>
   );
 }
-
-export { Desktop, _ as Desktop_ };
