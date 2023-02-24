@@ -1,15 +1,14 @@
 import { AppBar, Toolbar } from "react95";
-import { _ } from "./_";
+import { RightSide } from "./RightSide";
+import { LeftSide } from "./LeftSide";
 
-function Taskbar() {
+export function Taskbar() {
   return (
     <AppBar position="unset" as="div">
       <Toolbar className="justify-between">
-        <_.LeftSide />
-        <_.RightSide />
+        <LeftSide />
+        <RightSide />
       </Toolbar>
     </AppBar>
   );
 }
-
-export { Taskbar, _ as Taskbar_ };
