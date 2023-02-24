@@ -6,31 +6,30 @@ import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
 import themes from "react95/dist/themes";
 import { useLeva } from "../../hooks/useLeva";
 
-const GlobalStyle1 = createGlobalStyle`
-  @font-face {
-    font-family: "ms_sans_serif";
-    src: url("${ms_sans_serif}") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: fallback;
-  }
+const GlobalStyle = {
+  StyleReset: createGlobalStyle`${styleReset}`,
+  CustomFont: createGlobalStyle`
+    @font-face {
+      font-family: "ms_sans_serif";
+      src: url("${ms_sans_serif}") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: fallback;
+    }
 
-  @font-face {
-    font-family: "ms_sans_serif";
-    src: url("${ms_sans_serif_bold}") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-    font-display: fallback;
-  }
+    @font-face {
+      font-family: "ms_sans_serif";
+      src: url("${ms_sans_serif_bold}") format("woff2");
+      font-weight: bold;
+      font-style: normal;
+      font-display: fallback;
+    }
 
-  * {
-    font-family: "ms_sans_serif" !important;
-  }
-
-  ${styleReset}
-`;
-
-const GlobalStyle2 = createGlobalStyle`${styleReset}`;
+    * {
+      font-family: "ms_sans_serif" !important;
+    }
+  `,
+};
 
 export function React95({ children }) {
   const { control1 } = useLeva();
@@ -38,7 +37,8 @@ export function React95({ children }) {
 
   return (
     <>
-      {font ? <GlobalStyle1 /> : <GlobalStyle2 />}
+      <GlobalStyle.StyleReset />
+      {font ? <GlobalStyle.CustomFont /> : undefined}
       <ThemeProvider theme={themes[theme]}>{children}</ThemeProvider>
     </>
   );
