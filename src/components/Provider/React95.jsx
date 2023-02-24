@@ -4,7 +4,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";
 import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
 import themes from "react95/dist/themes";
-import { useControls } from "../../hooks/useControls";
+import { useLeva } from "../../hooks/useLeva";
 
 const GlobalStyle1 = createGlobalStyle`
   @font-face {
@@ -30,7 +30,7 @@ const GlobalStyle1 = createGlobalStyle`
 const GlobalStyle2 = createGlobalStyle`${styleReset}`;
 
 export function React95({ children }) {
-  const { control1 } = useControls();
+  const { control1 } = useLeva();
   const { theme, font } = control1();
 
   return (

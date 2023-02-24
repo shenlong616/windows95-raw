@@ -1,11 +1,11 @@
 import { Styled } from "../../../Styled";
 import { Uncategorized } from "../../../Uncategorized";
-import { useControls } from "../../../../hooks/useControls";
+import { useLeva } from "../../../../hooks/useLeva";
 import { clsx } from "clsx";
 import { Windows95_ } from "../../index";
 
 export function Item({ iconName, title }) {
-  const { control2 } = useControls();
+  const { control2 } = useLeva();
   const { disabled } = control2();
 
   return (

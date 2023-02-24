@@ -1,12 +1,12 @@
 import Draggable_ from "react-draggable";
 import { useRef, useState } from "react";
-import { useControls } from "../../hooks/useControls";
+import { useLeva } from "../../hooks/useLeva";
 import { clsx } from "clsx";
 
 export function Draggable({ children }) {
   const ref1 = useRef();
   const [state1, setState1] = useState();
-  const { control2 } = useControls();
+  const { control2 } = useLeva();
   const { disabled } = control2();
 
   return (

@@ -1,10 +1,10 @@
 import { _ } from "./_";
 import { Styled } from "../../Styled";
 import { clsx } from "clsx";
-import { useControls } from "../../../hooks/useControls";
+import { useLeva } from "../../../hooks/useLeva";
 
 function Desktop() {
-  const { control1 } = useControls();
+  const { control1 } = useLeva();
   const { taskbar } = control1();
 
   return (

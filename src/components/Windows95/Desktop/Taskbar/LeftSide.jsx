@@ -2,12 +2,12 @@ import { Button, MenuList, Separator } from "react95";
 import { useState } from "react";
 import { Uncategorized } from "../../../Uncategorized";
 import { Windows95_ } from "../../index";
-import { useControls } from "../../../../hooks/useControls";
+import { useLeva } from "../../../../hooks/useLeva";
 import { clsx } from "clsx";
 
 export function LeftSide() {
   const [state1, setState1] = useState(false);
-  const { control1 } = useControls();
+  const { control1 } = useLeva();
   const { taskbar } = control1();
 
   return (
