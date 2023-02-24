@@ -1,9 +1,9 @@
-import { Styled } from "../../../Styled";
-import { Uncategorized } from "../../../Uncategorized";
-import { useLeva } from "../../../../hooks/useLeva";
+import { Styled } from "../../Styled";
+import { Uncategorized } from "../../Uncategorized";
+import { useLeva } from "../../../hooks/useLeva";
 import { clsx } from "clsx";
 
-export function Item({ iconName, title }) {
+export function IconListItem({ iconName, title }) {
   const { control2 } = useLeva();
   const { disabled } = control2();
 
