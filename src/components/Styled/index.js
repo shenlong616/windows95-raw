@@ -1,3 +1,5 @@
-import { _ } from "./_";
+import { Div } from "./Div";
 
-export { _ as Styled };
+export function Styled() {}
+
+Object.assign(Styled, { Div });

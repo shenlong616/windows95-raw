@@ -8,7 +8,7 @@ function Desktop() {
   const { taskbar } = control1();
 
   return (
-    <Styled.Theme cssPropName="background-color" colorName="desktopBackground">
+    <Styled.Div cssPropName="background-color" colorName="desktopBackground">
       <div
         className={clsx({
           "flex max-h-screen min-h-screen": true,
@@ -24,7 +24,7 @@ function Desktop() {
             center element
           </div> */}
       </div>
-    </Styled.Theme>
+    </Styled.Div>
   );
 }
 

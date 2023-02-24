@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTheme = styled.div`
+export const Div = styled.div`
   ${(props) => {
     // console.log(props);
 
