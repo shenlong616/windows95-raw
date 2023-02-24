@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { useLeva } from "../../hooks/useLeva";
 import { clsx } from "clsx";
 
-export function Draggable({ children }) {
+export function Draggable({ children, ...rest }) {
   const ref1 = useRef();
   const [state1, setState1] = useState();
   const { control2 } = useLeva();
@@ -17,6 +17,7 @@ export function Draggable({ children }) {
       disabled={disabled}
       onStart={() => setState1(true)}
       onStop={() => setState1(false)}
+      {...rest}
     >
       <div
         ref={ref1}
