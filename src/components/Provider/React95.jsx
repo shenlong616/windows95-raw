@@ -2,7 +2,7 @@
 import { ThemeProvider } from "styled-components";
 import themes from "react95/dist/themes";
 import { useLeva } from "../../hooks/useLeva";
-import { GlobalStyle } from "../GlobalStyle";
+import { GlobalStyle } from "../global-style";
 
 export function React95Provider({ children }) {
   const { control1 } = useLeva();
