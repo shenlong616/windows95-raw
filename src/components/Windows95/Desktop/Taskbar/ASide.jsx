@@ -1,6 +1,6 @@
 import { Button, MenuList, Separator } from "react95";
 import { useState } from "react";
-import { Uncategorized } from "../../../Uncategorized";
+import { Uncategorized } from "../../../uncategorized";
 import { useLeva } from "../../../../hooks/use-leva";
 import { clsx } from "clsx";
 

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Uncategorized } from "./components/Uncategorized";
+import { Uncategorized } from "./components/uncategorized";
 import { lazy, Suspense } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 

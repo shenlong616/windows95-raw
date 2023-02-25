@@ -1,5 +1,5 @@
 import { Styled } from "../../styled";
-import { Uncategorized } from "../../Uncategorized";
+import { Uncategorized } from "../../uncategorized";
 import { useLeva } from "../../../hooks/use-leva";
 import { clsx } from "clsx";
 

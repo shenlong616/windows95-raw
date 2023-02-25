@@ -1,5 +1,5 @@
 import { Frame } from "react95";
-import { Uncategorized } from "../../../Uncategorized";
+import { Uncategorized } from "../../../uncategorized";
 import { Clock } from "./Clock";
 
 export function BSide() {

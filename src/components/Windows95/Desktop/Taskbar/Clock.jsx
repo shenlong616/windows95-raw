@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Uncategorized } from "../../../Uncategorized";
+import { Uncategorized } from "../../../uncategorized";
 
 export function Clock() {
   const localeTime = () =>
