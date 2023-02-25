@@ -1,5 +1,5 @@
 import { AnimatedIcon } from "./animated-icon";
-import { Draggable } from "./Draggable";
+import { Draggable } from "./draggable";
 import { GitHub } from "./GitHub";
 import { Icon } from "./Icon";
 import { MenuListItem } from "./MenuListItem";
