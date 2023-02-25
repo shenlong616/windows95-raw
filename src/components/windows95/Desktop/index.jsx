@@ -1,4 +1,4 @@
-import { IconList } from "./IconList";
+import { IconList } from "./icon-list";
 import { Taskbar } from "./Taskbar";
 import { Styled } from "../../styled";
 import { clsx } from "clsx";
