@@ -1,6 +1,6 @@
 import { Styled } from "../../Styled";
 import { Uncategorized } from "../../Uncategorized";
-import { useLeva } from "../../../hooks/useLeva";
+import { useLeva } from "../../../hooks/use-leva";
 import { clsx } from "clsx";
 
 export function IconListItem({ iconName, title }) {

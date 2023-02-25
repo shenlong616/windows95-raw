@@ -1,6 +1,6 @@
 import Draggable_ from "react-draggable";
 import { useRef, useState } from "react";
-import { useLeva } from "../../hooks/useLeva";
+import { useLeva } from "../../hooks/use-leva";
 import { clsx } from "clsx";
 
 export function Draggable({ children, ...rest }) {
