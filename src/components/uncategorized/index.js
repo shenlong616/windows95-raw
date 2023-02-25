@@ -3,7 +3,7 @@ import { Draggable } from "./draggable";
 import { GitHub } from "./github";
 import { Icon } from "./icon";
 import { MenuListItem } from "./menu-list-item";
-import { Text } from "./Text";
+import { Text } from "./text";
 
 export function Uncategorized() {}
 
