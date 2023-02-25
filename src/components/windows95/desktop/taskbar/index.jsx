@@ -1,6 +1,6 @@
 import { AppBar, Toolbar } from "react95";
-import { ASide } from "./ASide";
-import { BSide } from "./BSide";
+import { ASide } from "./a-side";
+import { BSide } from "./b-side";
 
 export function Taskbar() {
   return (
