@@ -1,4 +1,4 @@
-import { Styled } from "../../Styled";
+import { Styled } from "../../styled";
 import { Uncategorized } from "../../Uncategorized";
 import { useLeva } from "../../../hooks/use-leva";
 import { clsx } from "clsx";

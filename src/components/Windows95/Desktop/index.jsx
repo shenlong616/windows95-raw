@@ -1,6 +1,6 @@
 import { IconList } from "./IconList";
 import { Taskbar } from "./Taskbar";
-import { Styled } from "../../Styled";
+import { Styled } from "../../styled";
 import { clsx } from "clsx";
 import { useLeva } from "../../../hooks/use-leva";
 
