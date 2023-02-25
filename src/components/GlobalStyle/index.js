@@ -1,5 +1,5 @@
-import { CustomFont } from "./CustomFont";
-import { StyleReset } from "./StyleReset";
+import { CustomFont } from "./custom-font";
+import { StyleReset } from "./style-reset";
 
 export function GlobalStyle() {}
 
