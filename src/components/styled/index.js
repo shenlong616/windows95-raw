@@ -1,4 +1,4 @@
-import { Div } from "./Div";
+import { Div } from "./div";
 
 export function Styled() {}
 
