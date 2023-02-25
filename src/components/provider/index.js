@@ -1,4 +1,4 @@
-import { React95Provider } from "./React95";
+import { React95Provider } from "./react95";
 
 export function Provider() {}
 
