@@ -1,4 +1,4 @@
-import { Desktop } from "./Desktop";
+import { Desktop } from "./desktop";
 import { Provider } from "../provider";
 
 export default function Windows95() {
