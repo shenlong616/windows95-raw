@@ -1,4 +1,4 @@
-import { IconListItem } from "./IconListItem";
+import { IconListItem } from "./icon-list-item";
 
 export function IconList() {
   return (
