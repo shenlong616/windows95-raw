@@ -1,5 +1,5 @@
-import { React95 } from "./React95";
+import { React95Provider } from "./React95";
 
 export function Provider() {}
 
-Object.assign(Provider, { React95 });
+Object.assign(Provider, { React95: React95Provider });

@@ -4,7 +4,7 @@ import themes from "react95/dist/themes";
 import { useLeva } from "../../hooks/useLeva";
 import { GlobalStyle } from "../GlobalStyle";
 
-export function React95({ children }) {
+export function React95Provider({ children }) {
   const { control1 } = useLeva();
   const { theme, font } = control1();
 
