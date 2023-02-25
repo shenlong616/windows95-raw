@@ -1,6 +1,6 @@
 import { Frame } from "react95";
 import { Uncategorized } from "../../../uncategorized";
-import { Clock } from "./Clock";
+import { Clock } from "./clock";
 
 export function BSide() {
   return (
