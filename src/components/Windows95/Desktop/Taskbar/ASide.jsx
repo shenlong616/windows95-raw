@@ -16,7 +16,7 @@ export function ASide() {
         active={state1}
         className="font-bold"
       >
-        <Uncategorized.Icon iconName="User1_16x16_4" className="mr-1" />
+        <Uncategorized.Icon name="User1_16x16_4" className="mr-1" />
         <Uncategorized.Text sm>Start</Uncategorized.Text>
       </Button>
       {state1 ? (

@@ -10,5 +10,5 @@ export function AnimatedIcon({ iconName1, iconName2 }) {
     return () => clearTimeout(idTimeout);
   }, [state1]);
 
-  return <Uncategorized.Icon iconName={state1 ? iconName1 : iconName2} />;
+  return <Uncategorized.Icon name={state1 ? iconName1 : iconName2} />;
 }

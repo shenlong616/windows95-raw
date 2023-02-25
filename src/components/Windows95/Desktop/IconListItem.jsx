@@ -11,7 +11,7 @@ export function IconListItem({ iconName, title }) {
     <Uncategorized.Draggable>
       <div className="group flex flex-col items-center">
         <Uncategorized.Icon
-          iconName={iconName}
+          name={iconName}
           className={clsx({ "group-hover:invert": !disabled, "mb-1": true })}
         />
         <Styled.Div cssPropName="color" colorName="canvasTextInvert">
