@@ -3,7 +3,7 @@ import { Uncategorized } from "./components/uncategorized";
 import { lazy, Suspense } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-const Windows95 = lazy(() => import("./components/Windows95"));
+const Windows95 = lazy(() => import("./components/windows95"));
 
 function App() {
   return (
