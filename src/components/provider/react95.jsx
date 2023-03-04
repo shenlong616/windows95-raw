@@ -5,14 +5,14 @@ import { useLeva } from "@/hooks/use-leva";
 import { GlobalStyle } from "@/components/global-style";
 
 export function React95Provider({ children }) {
-  const { control1 } = useLeva();
-  const { theme, font } = control1();
+  let { control1 } = useLeva();
+  control1 = control1();
 
   return (
     <>
       <GlobalStyle.StyleReset />
-      {font ? <GlobalStyle.CustomFont /> : undefined}
-      <ThemeProvider theme={themes[theme]}>{children}</ThemeProvider>
+      {control1.font ? <GlobalStyle.CustomFont /> : undefined}
+      <ThemeProvider theme={themes[control1.theme]}>{children}</ThemeProvider>
     </>
   );
 }
