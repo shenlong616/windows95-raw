@@ -15,7 +15,7 @@ export function Draggable({ children, ...rest }) {
       // Note that sending className, style, or transform as properties will error - set them on the child element directly.
       {...rest}
       nodeRef={ref1}
-      disabled={disabled}
+      disabled={control2.disabled}
       onStart={() => setState1(true)}
       onStop={() => setState1(false)}
     >
