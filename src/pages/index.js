@@ -1,7 +1,6 @@
 import styles from "@/styles/Home.module.css";
 import { Uncategorized } from "@/components/uncategorized";
 import { Windows95 } from "@/components/windows95";
-import { Provider } from "@/components/provider";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,9 +13,7 @@ export default function Home() {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
       </Head>
-      <Provider.React95>
-        <Windows95.Desktop />
-      </Provider.React95>
+      <Windows95.Desktop />
       <Uncategorized.GitHub url="https://github.com/shenlong616/windows95-raw" />
     </>
   );
