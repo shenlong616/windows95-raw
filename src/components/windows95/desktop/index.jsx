@@ -5,16 +5,16 @@ import { clsx } from "clsx";
 import { useLeva } from "@/hooks/use-leva";
 
 export function Desktop() {
-  const { control1 } = useLeva();
-  const { taskbar } = control1();
+  let { control1 } = useLeva();
+  control1 = control1();
 
   return (
     <Styled.Div cssPropName="background-color" colorName="desktopBackground">
       <div
         className={clsx({
           "flex max-h-screen min-h-screen": true,
-          "flex-col": taskbar === "bottom",
-          "flex-col-reverse": taskbar === "top",
+          "flex-col": control1.taskbar === "bottom",
+          "flex-col-reverse": control1.taskbar === "top",
         })}
       >
         <div className="grow overflow-auto p-6">

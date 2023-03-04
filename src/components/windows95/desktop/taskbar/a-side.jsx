@@ -6,8 +6,8 @@ import { clsx } from "clsx";
 
 export function ASide() {
   const [state1, setState1] = useState(false);
-  const { control1 } = useLeva();
-  const { taskbar } = control1();
+  let { control1 } = useLeva();
+  control1 = control1();
 
   return (
     <>
@@ -19,8 +19,8 @@ export function ASide() {
         <div
           className={clsx({
             "absolute left-0": true,
-            "bottom-full": taskbar === "bottom",
-            "top-full": taskbar === "top",
+            "bottom-full": control1.taskbar === "bottom",
+            "top-full": control1.taskbar === "top",
           })}
         >
           <MenuList onClick={() => setState1(false)}>
