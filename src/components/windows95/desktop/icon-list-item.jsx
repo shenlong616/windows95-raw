@@ -1,15 +1,15 @@
 import { Styled } from "@/components/styled";
-import { Uncategorized } from "@/components/uncategorized";
 import { useLeva } from "@/hooks/use-leva";
 import { clsx } from "clsx";
 import { Windows95 } from "@/components/windows95";
+import { Draggable } from "@/components/draggable";
 
 export function IconListItem({ iconName, title }) {
   let { control2 } = useLeva();
   control2 = control2();
 
   return (
-    <Uncategorized.Draggable>
+    <Draggable>
       <div className="group flex flex-col items-center">
         <Windows95.Icon
           name={iconName}
@@ -30,6 +30,6 @@ export function IconListItem({ iconName, title }) {
           </span>
         </Styled.Div>
       </div>
-    </Uncategorized.Draggable>
+    </Draggable>
   );
 }
