@@ -1,7 +1,7 @@
 import styles from "@/styles/Home.module.css";
-import { Uncategorized } from "@/components/uncategorized";
 import { Windows95 } from "@/components/windows95";
 import Head from "next/head";
+import { GitHub } from "@/github";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         />
       </Head>
       <Windows95.Desktop />
-      <Uncategorized.GitHub url="https://github.com/shenlong616/windows95-raw" />
+      <GitHub url="https://github.com/shenlong616/windows95-raw" />
     </>
   );
 }
