@@ -1,4 +1,4 @@
-import { IconListItem } from "@/components/windows95/desktop/icon-list-item";
+import { IconListItem } from "@/components/windows95/icon-list-item";
 
 export function IconList() {
   return (

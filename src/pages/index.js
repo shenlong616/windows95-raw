@@ -1,6 +1,6 @@
 import styles from "@/styles/Home.module.css";
-import { IconList } from "@/components/windows95/desktop/icon-list";
-import { Taskbar } from "@/components/windows95/desktop/taskbar";
+import { IconList } from "@/components/windows95/icon-list";
+import { Taskbar } from "@/components/windows95/taskbar";
 import { Styled } from "@/components/styled";
 import { clsx } from "clsx";
 import { useLeva } from "@/hooks/use-leva";

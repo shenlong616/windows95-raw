@@ -1,5 +1,5 @@
 import { Frame } from "react95";
-import { Clock } from "@/components/windows95/desktop/taskbar/clock";
+import { Clock } from "@/components/windows95/taskbar/clock";
 import { Windows95 } from "@/components/windows95";
 
 export function BSide() {
