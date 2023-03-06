@@ -11,7 +11,6 @@ export function React95Provider({ children }) {
   return (
     <>
       <GlobalStyle.StyleReset />
-      {control1.font ? <GlobalStyle.CustomFont /> : undefined}
       <ThemeProvider theme={themes[control1.theme]}>{children}</ThemeProvider>
     </>
   );

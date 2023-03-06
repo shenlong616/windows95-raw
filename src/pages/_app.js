@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Provider } from "@/components/provider";
 import Head from "next/head";
 import { GitHub } from "@/github";
+import { Font } from "@/components/font";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,7 +15,9 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Provider.React95>
-        <Component {...pageProps} />
+        <Font.MsSansSerif>
+          <Component {...pageProps} />
+        </Font.MsSansSerif>
       </Provider.React95>
       <GitHub url="https://github.com/shenlong616/windows95-raw" />
     </>
