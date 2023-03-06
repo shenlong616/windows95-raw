@@ -14,11 +14,11 @@ export default function App({ Component, pageProps }) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
       </Head>
-      <Provider.React95>
-        <Font.MsSansSerif>
+      <Font.MsSansSerif>
+        <Provider.React95>
           <Component {...pageProps} />
-        </Font.MsSansSerif>
-      </Provider.React95>
+        </Provider.React95>
+      </Font.MsSansSerif>
       <GitHub url="https://github.com/shenlong616/windows95-raw" />
     </>
   );
