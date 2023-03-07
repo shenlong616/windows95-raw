@@ -6,7 +6,7 @@ const localeTime = () =>
     "0"
   )}`;
 
-export function Clock() {
+export function TextClock() {
   const [state1, setState1] = useState(localeTime);
 
   useEffect(() => {
