@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import themes from "react95/dist/themes";
 import { useLeva } from "@/hooks/use-leva";
 
-export function React95Provider({ children }) {
+export function React95({ children }) {
   let { control1 } = useLeva();
   control1 = control1();
 
