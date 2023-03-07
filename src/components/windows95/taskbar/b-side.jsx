@@ -1,5 +1,5 @@
 import { Frame } from "react95";
-import { Clock } from "@/components/windows95/taskbar/clock";
+import { Clock } from "@/components/clock";
 import { Icon } from "@/components/windows95/icon";
 import { AnimatedIcon } from "@/components/windows95/animated-icon";
 
