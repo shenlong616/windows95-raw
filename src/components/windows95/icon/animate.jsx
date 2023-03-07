@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Icon } from "@/components/windows95/icon";
 
-export function AnimatedIcon({ iconName1, iconName2 }) {
+export function Animate({ iconName1, iconName2 }) {
   const [state1, setState1] = useState(true);
 
   useEffect(() => {
