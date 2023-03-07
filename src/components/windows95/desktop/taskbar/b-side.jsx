@@ -1,5 +1,5 @@
 import { Frame } from "react95";
-import { TextClock } from "@/components/text-clock";
+import { Text } from "@/components/text";
 import { Icon } from "@/components/windows95/icon";
 import { AnimatedIcon } from "@/components/windows95/animated-icon";
 
@@ -12,7 +12,7 @@ export function BSide() {
           iconName1="Lights101_16x16_4"
           iconName2="Lights102_16x16_4"
         />
-        <TextClock />
+        <Text.Clock />
       </div>
     </Frame>
   );
