@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import { Draggable } from "@/components/draggable";
 import { Icon } from "@/components/windows95/icon";
 
-export function IconListItem({ iconName, title }) {
+export function Item({ iconName, title }) {
   let { control2 } = useLeva();
   control2 = control2();
 
