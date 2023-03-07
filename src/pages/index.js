@@ -1,5 +1,5 @@
 import styles from "@/styles/Home.module.css";
-import { Desktop } from "@/components/windows95/desktop";
+import { Windows95 } from "@/components/windows95";
 import { Styled } from "@/components/styled";
 import { clsx } from "clsx";
 import { useLeva } from "@/hooks/use-leva";
@@ -18,9 +18,9 @@ export default function Home() {
         })}
       >
         <div className="grow overflow-auto p-6">
-          <Desktop.IconList />
+          <Windows95.Desktop.IconList />
         </div>
-        <Desktop.Taskbar />
+        <Windows95.Desktop.Taskbar />
         {/* <div className="absolute flex h-full w-full flex-col items-center justify-center">
             center element
           </div> */}
