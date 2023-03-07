@@ -16,7 +16,7 @@ const msSansSerif = localFont({
   ],
 });
 
-export function MsSansSerifFont({ children }) {
+export function MsSansSerif({ children }) {
   let { control1 } = useLeva();
   control1 = control1();
 
