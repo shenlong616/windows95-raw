@@ -1,9 +1,30 @@
 import { IconList } from "@/components/windows95/desktop/icon-list";
 import { Taskbar } from "@/components/windows95/desktop/taskbar";
+import { Styled } from "@/components/styled";
+import { clsx } from "clsx";
+import { useLeva } from "@/hooks/use-leva";
 
-export function Desktop() {}
+export function Desktop() {
+  let { control1 } = useLeva();
+  control1 = control1();
 
-Object.assign(Desktop, { IconList, Taskbar });
-
-IconList.displayName = "Desktop.IconList";
-Taskbar.displayName = "Desktop.Taskbar";
+  return (
+    <Styled.Div cssPropName="background-color" colorName="desktopBackground">
+      <div
+        className={clsx({
+          "flex max-h-screen min-h-screen": true,
+          "flex-col": control1.taskbar === "bottom",
+          "flex-col-reverse": control1.taskbar === "top",
+        })}
+      >
+        <div className="grow overflow-auto p-6">
+          <IconList />
+        </div>
+        <Taskbar />
+        {/* <div className="absolute flex h-full w-full flex-col items-center justify-center">
+              center element
+            </div> */}
+      </div>
+    </Styled.Div>
+  );
+}
