@@ -1,5 +1,6 @@
 import "@react95/icons/icons.css";
 import { clsx } from "clsx";
+import { Animate } from "@/components/windows95/icon/animate";
 
 // https://react95.github.io/React95/?path=/story/icon--all
 export function Icon({ name, className }) {
@@ -10,3 +11,7 @@ export function Icon({ name, className }) {
     />
   );
 }
+
+Object.assign(Icon, { Animate });
+
+Animate.displayName = "Icon.Animate";

@@ -1,17 +1,17 @@
 import { Styled } from "@/components/styled";
 import { useLeva } from "@/hooks/use-leva";
 import { clsx } from "clsx";
-import { Windows95 } from "@/components/windows95";
 import { Draggable } from "@/components/draggable";
+import { Icon } from "@/components/windows95/icon";
 
-export function IconListItem({ iconName, title }) {
+export function Item({ iconName, title }) {
   let { control2 } = useLeva();
   control2 = control2();
 
   return (
     <Draggable>
       <div className="group flex flex-col items-center">
-        <Windows95.Icon
+        <Icon
           name={iconName}
           className={clsx({
             "group-hover:invert": !control2.disabled,

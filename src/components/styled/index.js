@@ -1,5 +1,7 @@
-import { StyledDiv } from "@/components/styled/div";
+import { Div } from "@/components/styled/div";
 
 export function Styled() {}
 
-Object.assign(Styled, { Div: StyledDiv });
+Object.assign(Styled, { Div });
+
+Div.displayName = "Styled.Div";

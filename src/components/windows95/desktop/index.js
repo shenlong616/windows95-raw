@@ -22,8 +22,8 @@ export function Desktop() {
         </div>
         <Taskbar />
         {/* <div className="absolute flex h-full w-full flex-col items-center justify-center">
-            center element
-          </div> */}
+              center element
+            </div> */}
       </div>
     </Styled.Div>
   );

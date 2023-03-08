@@ -1,5 +1,7 @@
-import { MsSansSerifFont } from "@/components/font/ms-sans-serif";
+import { MsSansSerif } from "@/components/font/ms-sans-serif";
 
 export function Font() {}
 
-Object.assign(Font, { MsSansSerif: MsSansSerifFont });
+Object.assign(Font, { MsSansSerif });
+
+MsSansSerif.displayName = "Font.MsSansSerif";
