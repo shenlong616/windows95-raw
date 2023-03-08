@@ -13,5 +13,3 @@ export function Icon({ name, className }) {
 }
 
 Object.assign(Icon, { Animate });
-
-Animate.displayName = "Icon.Animate";
