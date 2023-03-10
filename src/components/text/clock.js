@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-const localeTime = () =>
-  `${new Date().getHours()}:${String(new Date().getMinutes()).padStart(
-    2,
-    "0"
-  )}`;
-
 export function Clock() {
+  const localeTime = () =>
+    `${new Date().getHours()}:${String(new Date().getMinutes()).padStart(
+      2,
+      "0"
+    )}`;
+
   const [state1, setState1] = useState(localeTime);
 
   useEffect(() => {
