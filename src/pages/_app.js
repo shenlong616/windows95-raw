@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import { Provider } from "@/components/provider";
 import { Font } from "@/components/font";
-import { GlobalStyle } from "@/components/global-style";
+import { Dynamic } from "@/components/dynamic";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle.StyleReset />
+      <Dynamic.GlobalStyle.StyleReset />
       <Font.MsSansSerif>
         <Provider.React95>
           <Component {...pageProps} />
